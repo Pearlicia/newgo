@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEO</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Geo</span>Search</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="/public/index.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+             </nav>
+        </div>
+    </header>
+
+    <section>
+        <div id="searchContainer">
+            <div class="container">
+                <h1>Search your place of Interest</h1>
+                <input type="text" class="searchControl" id="searchInput" placeholder="Search...">
+                <button type="submit" class="searchContol" id="searchBtn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+   <section>
+        <div class="containa">
+                <div class="header">
+                    <div class="icon-container">
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="general-information">
+                        <div class="status">Enter a Location</div>
+                        <div class="location"> <p>-</p> </div>
+
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail">
+                            <div class="title">Wind</div>
+                            <div class="value">TBD</div>
+                        </div>
+                         <div class="detail">
+                            <div id="humid" class="title">Humidity</div>
+                            <div class="value">TBD</div>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Precipitation</div>
+                            <div class="value">TBD</div>
+                        </div>
+                        <div class="detail">
+                            <div class="temperature-value">
+                                 <p>- 0<span>C</span></p>
+                            </div>
+                            <div class="temperature-description">
+                                 <p>-</p>
+                            </div>
+                            <div class="title">Temperature</div>
+                            <div class="value">TBD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification"></div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value">
+                            <p>- 0<span>C</span></p>
+                    </div>
+                    <div class="temperature-description">
+                        <p>-</p>
+                    </div>
+                    <div class="location">
+                        <p>-</p>
+                    </div>
+                    <div id="humid">
+        
+                    </div>
+                </div>
+            </div>
+        
+   </section>
+
+   <section id="data">
+       <div class="detailContaina">
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title">Wind</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="detail">
+                <div class="title">Temperature</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="detail">
+                <div class="title">Humidity</div>
+                <div class="value">TBD</div>
+            </div>
+
+            <div class="detail">
+                <div class="title">Precipitation</div>
+                <div class="value">TBD</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section>
+        <!-- The slide-out panel for showing place details -->
+        <div id="panel"></div>
+
+       <!-- Map appears here -->
+         <div id="map"></div>
+
+    </section>
+     
+    
+       <footer>
+            <p>Lishia Inc. Copyright &copy; 2019</p>
+        </footer>
+        
+    
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ZCZbX-eaWFL-V_vwMocKOUmrv0AVbF0&libraries=places&callback=initMap"></script>
+    
+</body>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

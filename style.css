@@ -1,0 +1,205 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+/* Header*/
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+  }
+
+   ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    height: 38px;
+    width: 50px;
+    background: #e8491d;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+  }
+
+
+  /* Header */
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+  }
+
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+
+  header #branding {
+    float: left;
+  }
+
+  header #branding h1 {
+    margin: 0;
+  }
+
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+  }
+
+   /* Search */
+
+   #searchContainer {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+  }
+
+  #searchContainer h1 {
+    float: left;
+  }
+
+  #searchContainer form {
+    float: right;
+    margin-top: 15px;
+  }
+
+  #searchContainer input[type="text"] {
+    padding: 4px;
+    outline: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 20px;
+    margin-top:0px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+  }
+
+  @media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #searchContainer h1,
+    #searchContainer form {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+}
+
+
+/* weather details */
+
+.detailContaina{
+    max-width: 90%;
+    width: 1200px;
+    background-color: #293251;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Map */
+
+/*  Set the map height explicitly to define the size of the div
+     * element that contains the map. */
+     #map {
+        height: 50%;
+        margin: auto;
+        background-color: grey;
+      }
+  
+      /* Optional: Makes the sample page fill the window. */
+      
+  
+      
+        #panel {
+            height: 100%;
+            width: null;
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: all .2s ease-out;
+        }
+  
+        .open {
+            width: 250px;
+        }
+  
+        /* Styling for place details */
+        .hero {
+            width: 100%;
+            height: auto;
+            max-height: 166px;
+            display: block;
+        }
+  
+        .place,
+        p {
+            font-family: 'open sans', arial, sans-serif;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+  
+        .details {
+            color: darkslategrey;
+        }
+  
+        a {
+            text-decoration: none;
+            color: cadetblue;
+        }
+  
+  
+
+
