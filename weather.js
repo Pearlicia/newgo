@@ -123,7 +123,7 @@ function searchWeather(searchTerm) {
             weather.country = res.sys.country;
             weather.humidity = res.main.humidity;
 
-            humid.innerHTML = `<p>${weather.humidity}</p>`
+            humidity.innerHTML = `<p>${weather.humidity}</p>`
     }).then(function() {
         displayWeather();
     });
