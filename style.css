@@ -1,155 +1,182 @@
 
 html,
-   body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  background-color: #f4f4f4;
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
 }
 
 /* Global*/
 .container{
-    width:80%;
-    margin:auto;
-    overflow: hidden;
-  }
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
 
-   ul {
-    margin: 0;
-    padding: 0;
-  }
+ul {
+margin: 0;
+padding: 0;
+}
 
-  button {
-    height: 38px;
-    width: 50px;
-    background: #e8491d;
-    border: 0;
-    outline: none;
-    border-radius: 10px;
-    font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff;
+button {
+  height: 38px;
+  width: 50px;
+  background: #e8491d;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
 
-  }
+}
 
 
-  /* Header */
-  header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-  }
+/* Header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
 
-  header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
-  
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
 
-  header #branding {
-    float: left;
-  }
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
 
-  header #branding h1 {
-    margin: 0;
-  }
+header #branding {
+  float: left;
+}
 
-  header nav {
-    float: right;
-    margin-top: 10px;
-  }
+header #branding h1 {
+  margin: 0;
+}
 
-  header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
-  }
+header nav {
+  float: right;
+  margin-top: 10px;
+}
 
-  header a:hover {
-    color: #cccccc;
-    font-weight: bold;
-  }
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
 
-   /* Search */
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
 
-   #searchContainer {
-    padding: 15px;
-    color: #ffffff;
-    background: #35424a;
-  }
+  /* Search */
 
-  #searchContainer h1 {
-    float: left;
-  }
+#searchContainer {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
 
+#searchContainer h1 {
+  float: left;
+}
+
+#searchContainer form {
+  float: right;
+  margin-top: 15px;
+}
+
+#searchContainer input[type="text"] {
+  padding: 4px;
+  outline: none;
+  border-radius: 10px;
+  height: 25px;
+  margin-left: 100px;
+  width: 400px;
+  font-size: 16px;
+}
+
+
+/* Footer */
+
+footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  height: 70px;
+  justify-content: center;
+  background-color: #e8491d;
+  display: flex;
+}
+
+footer p {
+  padding-top:10px;
+}
+
+@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #searchContainer h1,
   #searchContainer form {
-    float: right;
-    margin-top: 15px;
-  }
-
-  #searchContainer input[type="text"] {
-    padding: 4px;
-    outline: none;
-    border-radius: 10px;
-    height: 25px;
-    margin-left: 100px;
-    width: 300px;
-    font-size: 16px;
-  }
-
-
-  /* Footer */
-
-  footer {
-    padding: 20px;
-    margin-top:0px;
-    color: #ffffff;
-    background-color: #e8491d;
+    float: none;
     text-align: center;
+    width: 100%;
   }
 
-  @media(max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #searchContainer h1,
-    #searchContainer form {
-      float: none;
-      text-align: center;
-      width: 100%;
-    }
-
-    header {
-      padding-bottom: 20px;
-    }
-
-    #showcase h1 {
-      margin-top: 40px;
-    }
-
-    #search button {
-      display: block;
-      width: 100%;
-    }
-
-    #search form input[type="text"] {
-      width: 100%;
-      margin-bottom: 5px;
-    }
+  header {
+    padding-bottom: 20px;
   }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #searchContainer button {
+    display: block;
+    width: 100%;
+  }
+
+  #searchContainer form input[type="text"] {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .detail-section{
+    flex-direction: column;
+  }
+
+  .detail.bordered{
+    border-right: 0;
+    border-left: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 
 
@@ -242,8 +269,8 @@ html,
 }
 
 .detail .value {
-  font-size: 1.5rem;
-  margin-top: 15px;
+font-size: 1.5rem;
+margin-top: 15px;
 }
 .detail .temperature-value {
   font-size: 1.5rem;
@@ -259,80 +286,86 @@ html,
 
 
 
-        /* Showcase */
+/* Showcase */
 
-        #showcase {
-          min-height: 400px;
-          background: url('../img/img2.jpg') no-repeat 0 -300px;
-          text-align: center;
-          color: #ffffff;
-        }
+#showcase {
+  min-height: 400px;
+  background: url('../img/img2.jpg') no-repeat 0 -300px;
+  text-align: center;
+  color: #ffffff;
+}
 
-        #showcase h1 {
-          margin-top: 70px;
-          font-size: 55px;
-          margin-bottom: 10px;
-        }
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
 
-        #showcase p {
-          font-size: 30px;
-        }
-      
+#showcase p {
+  font-size: 30px;
+}
+    
 
 
 /* Map */
 
 /*  Set the map height explicitly to define the size of the div
-     * element that contains the map. */
-     #map {
-      height: 50%;
-      margin: auto;
-      background-color: grey;
-    }
+    * element that contains the map. */
+#map {
+  height: 50%;
+  margin: auto;
+  background-color: grey;
+}
 
-    /* Optional: Makes the sample page fill the window. */
-    
-
-    
-      #panel {
-          height: 50%;
-          width: null;
-          background-color: white;
-          position: relative;
-          z-index: 1;
-          overflow-x: hidden;
-          transition: all .2s ease-out;
-      }
-
-      .open {
-          width: 100%;
-      }
-
-      /* Styling for place details */
-      .hero {
-          width: 50%;
-          height: auto;
-          max-height: 166px;
-          display: block;
-      }
-
-      .place,
-      p {
-          font-family: 'open sans', arial, sans-serif;
-          padding-left: 18px;
-          padding-right: 18px;
-      }
-
-      .details {
-          color: darkslategrey;
-      }
-
-      a {
-          text-decoration: none;
-          color: cadetblue;
-      }
-
+/* Optional: Makes the sample page fill the window. */
+  
 
   
+#panel {
+  height: 30%;
+  width: auto;
+  background-color: #e8491d;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all .2s ease-out;
+}
+
+.open {
+  width: 100%;
+}
+
+/* Styling for place details */
+.hero {
+      width: 20%;
+      height: auto;
+      max-height: 166px;
+      display: block;
+      float: left;
+  }
+
+.place,
+p {
+  font-family: 'open sans', arial, sans-serif;
+  padding-left: 18px;
+  padding-right: 18px;
+  float: left;
+ 
+}
+
+.details {
+  color: white;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  float: right;
+}
+
+
+
 
 

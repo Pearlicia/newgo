@@ -11,7 +11,10 @@
     let currentInfoWindow;
     let service;
     let infoPane;
+    let panel = document.getElementById('panel');
     
+    panel.innerHTML = `<h1>Click the Marker To Display Place Details Here</h1>`;
+    panel.style.textAlign = 'center';
 
     function initMap() {
         // Initialize variables
