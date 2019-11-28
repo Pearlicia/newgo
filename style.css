@@ -366,6 +366,43 @@ a {
 }
 
 
+/* About page Styles */
+.foota{
+  /* margin-top: 30%; */
+}
+
+.geoInfo{
+    background-color: gray;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+    margin: 1px;
+    padding: 1px;
+  
+}
+
+.moreInfo{
+  background-color: gray;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+  margin: 1px;
+  padding: 1px;
+
+}
+
+.AboutUs{
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 
 
