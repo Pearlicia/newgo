@@ -115,8 +115,11 @@ function searchWeather(searchTerm) {
     .then(res => {
         return res.json();
     }).then( res => {
-        console.log(res)
-        weather.temperature.value = Math.floor(res.main.temp - KELVIN);
+        // console.log(res)
+        if (res.cod == '404') {
+            alert(res.message)
+        } else {
+            weather.temperature.value = Math.floor(res.main.temp - KELVIN);
             weather.description = res.weather[0].description;
             weather.iconId = res.weather[0].icon;
             weather.city = res.name;
@@ -124,13 +127,16 @@ function searchWeather(searchTerm) {
             weather.humidity = res.main.humidity;
 
             humidity.innerHTML = `<p>${weather.humidity}</p>`
+        }
+
     }).then(function() {
         displayWeather();
-    });
+    }).catch(e => alert(e));
 }
 
 // Getting Values From Form Field
-document.getElementById('searchBtn').addEventListener('click', () => {
+document.getElementById('form').addEventListener('submit', (e) => {
+    e.preventDefault();
     let searchTerm = document.getElementById('searchInput').value;
 
     if (searchTerm) {

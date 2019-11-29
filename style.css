@@ -188,8 +188,8 @@ footer p {
   justify-content: center;
   align-items: center;
   min-height: 55vh;
-  margin: 1px;
-  padding: 1px;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -303,6 +303,9 @@ margin-top: 15px;
 
 #showcase p {
   font-size: 30px;
+  padding-left: 20%;
+  text-align: center;
+  justify-content: center;
 }
     
 
